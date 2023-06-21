@@ -44,12 +44,6 @@ In the intial modeling, `SVD` produced an `RMSE` of `0.87`, `KNN Basic` produced
 By using the best parametres, `SVD` improved a bit and posted an `RMSE` of `0.86`.
 ## Conclusion
 
-The results of the evaluation showed that the SVD model is the best choice for my application. The SVD model has the lowest RMSE, the lowest MAE, the highest precision, the highest recall, the highest ROC curve and AUC, and the lowest number of false positives. The SVD model also takes the longest time to train, but I believe that the accuracy of the model is worth the extra time.
-
-However, there are some limitations to this study. First, the data set that I used was relatively small, so the results may not be generalizable to other data sets. Second, I only evaluated three different models, so it is possible that there are other models that would perform even better.
-
-In future research, I would like to evaluate a larger data set and a wider range of models. I would also like to investigate the use of the SVD model for other applications, such as product recommendations and fraud detection.
-
 `SVD` is the best model for this project which is evident with it performing better than the other models.
 
 The model was able to give top 5 predictions to a user based on their previous ratings.
