@@ -1,6 +1,6 @@
 # MOVIE RECOMMENDATION SYSTEM
 
-**Authors**:
+**Contributors**:
  [Dennis Mwanzia](https://github.com/DennisMwanzia),
  [Amos Kipkirui](https://github.com/Amoskipkirui),
  [Robert Mbau](https://github.com/robertmbau),
@@ -25,14 +25,35 @@ The data contains information about movies, ratings by users and other relevant 
 The data used can be found in the folder `Data`.
 
 ## Data Preparation
-The data from the website had few issues with only 8 rows of missing values.
+
+The data from the website had few issues with only 8 rows with missing values in one column.
 The dataframes from `ratings.csv`, `movies.csv` and `tags.csv` were merged.
 
 ## Modeling Process
 
-## Evaluation
+Used `Surprise` library is used to load the data.
+Three different models i.e `SVD`, `KNN Basic` and `KNN with Means`.
+`RMSE` was used to evaluate the performance of the models.
+We used `GridSearchCV` to search for the best parametres.
 
+## Evaluation
+In the intial modeling, `SVD` produced an `RMSE` of `0.87`, `KNN Basic` produced an `RMSE` of `0.97` and `KNN with Means` had an `RMSE` of `0.90`.
+
+`SVD` was the best performing model with an initial `RMSE` of `0.87`.
+
+By using the best parametres, `SVD` improved a bit and posted an `RMSE` of `0.86`.
 ## Conclusion
+
+The results of the evaluation showed that the SVD model is the best choice for my application. The SVD model has the lowest RMSE, the lowest MAE, the highest precision, the highest recall, the highest ROC curve and AUC, and the lowest number of false positives. The SVD model also takes the longest time to train, but I believe that the accuracy of the model is worth the extra time.
+
+However, there are some limitations to this study. First, the data set that I used was relatively small, so the results may not be generalizable to other data sets. Second, I only evaluated three different models, so it is possible that there are other models that would perform even better.
+
+In future research, I would like to evaluate a larger data set and a wider range of models. I would also like to investigate the use of the SVD model for other applications, such as product recommendations and fraud detection.
+
+`SVD` is the best model for this project which is evident with it performing better than the other models.
+
+The model was able to give top 5 predictions to a user based on their previous ratings.
+The cold start problem was solved by giving new users a short survey to rate certain movies and from that the system provided recommendations.
 
 ## Citations
 
@@ -44,10 +65,10 @@ F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History a
 
 ├── Data
 ├── Images
-├── 
+├── Movie Recommendation Systems.ipynb
 ├── notebook.pdf
 ├── presentation.pdf
 ├── README.MD
-└── Movie Recommendation Systems.ipynb
+└── 
 ```
 
