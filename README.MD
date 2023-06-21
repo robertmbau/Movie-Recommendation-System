@@ -59,10 +59,10 @@ F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History a
 
 ├── Data
 ├── Images
+├── Github.pdf
 ├── Movie Recommendation Systems.ipynb
-├── notebook.pdf
-├── presentation.pdf
-├── README.MD
-└── 
+├── Notebook.pdf
+├── Presentation.pdf
+└── README.MD
 ```
 
